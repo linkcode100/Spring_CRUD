@@ -26,6 +26,9 @@ public class Employee {
 	@Column(name = "city")
 	private String city;
 	
+	@Column(name = "company")
+	private String company;
+	
 	public long getId() {
 		return id;
 	}
@@ -56,6 +59,12 @@ public class Employee {
 	}
 	public void setCity(String city) {
 		this.city = city;
+	}
+	public String getCompany() {
+		return company;
+	}
+	public void setCompany(String company) {
+		this.company = company;
 	}
 	
 }
