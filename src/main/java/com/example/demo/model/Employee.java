@@ -22,6 +22,9 @@ public class Employee {
 	
 	@Column(name = "email")
 	private String email;
+
+	@Column(name = "city")
+	private String city;
 	
 	public long getId() {
 		return id;
@@ -46,6 +49,13 @@ public class Employee {
 	}
 	public void setEmail(String email) {
 		this.email = email;
+	}
+
+	public String getCity() {
+		return city;
+	}
+	public void setCity(String city) {
+		this.city = city;
 	}
 	
 }
